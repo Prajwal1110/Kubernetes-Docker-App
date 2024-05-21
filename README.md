@@ -143,7 +143,7 @@ kubectl get pods
 Now you need to Expose your kubernetes service
 
 ```bash
-kubectl expose <resource-type> <resource-name> --port=<port> --target-port=<target-port> --type=<service-type>
+kubectl port-forward svc/notes-app-deployment 8080:80
 ```
 Now you can see app running on the port
 Forwarding from 127.0.0.1:8080 -> 3000
